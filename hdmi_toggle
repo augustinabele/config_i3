@@ -1,0 +1,9 @@
+#!/bin/bash
+intern=eDP-1
+extern=DP-1
+
+if xrandr --listmonitors | grep "+$extern"; then
+    xrandr --output "$extern" --off
+else
+    xrandr --output "$extern" --above "$intern" --auto
+fi
