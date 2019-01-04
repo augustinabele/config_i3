@@ -172,13 +172,13 @@ bar {
        position top
        
        colors {
-        background #000000
-        statusline #eeeeee
+        background #1d1f21
+        statusline #c5c8c6
 
-        focused_workspace  #ffffff #285577
-        active_workspace   #ffffff #333333
-        inactive_workspace #888888 #222222
-        urgent_workspace   #ffffff #900000
+        focused_workspace  #c5c8c6 #285577
+        active_workspace   #c5c8c6 #373b41
+        inactive_workspace #c5c8c6 #282a2e
+        urgent_workspace   #c5c8c6 #cc6666
     }
 }
 
@@ -207,11 +207,13 @@ bindsym XF86MonBrightnessUp exec ~/.bin/backlight_control up
 bindsym XF86MonBrightnessDown exec sh ~/.bin/backlight_control down
 
 # sound volume
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+# touchpad
 exec_always xinput --set-prop 'ELAN1301:00 04F3:3035 Touchpad' 'libinput Tapping Enabled' 1
+exec_always xinput --set-prop 'ELAN1301:00 04F3:3035 Touchpad' 'Synaptics Move Speed' 1.000000, 5.000000, 0.200000, 0.00000
 
 # icon wifi bottom right
 exec nm-applet &

@@ -1,0 +1,60 @@
+Xcursor.theme: Adwaita
+
+URxvt.scrollBar: false
+URxvt.background: #000000
+URxvt.foreground: #ffffff
+! tabbed
+URxvt.perl-ext-common: default,matcher,fullscreen,font-size
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+!URxvt.matcher.rend.0: Uline Bold fg5
+!URxvt.tabbed.tabbar-fg: 2
+!URxvt.tabbed.tabbar-bg: 0
+!URxvt.tabbed.tab-fg: 3
+!URxvt.tabbed.tab-bg: 0
+URxvt.font: xft:Liberation Mono:size=14
+URxvt.boldfont: xft:Liberation Mono:bold:size=16
+URxvt.letterSpace: -2
+!URxvt.keysym.F11: perl:fullscreen:switch
+URxvt*iso14755: False
+URxvt*iso14755_52: False
+URxvt*transparent: true
+URxvt*shading: 20
+URxvt*savelines: 15000
+
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
